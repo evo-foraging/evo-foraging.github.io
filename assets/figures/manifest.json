@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "landscapes",
+    "order": "01",
+    "label": "Figure 1 · Resource landscapes",
+    "name": "Resource landscapes and best evolved trajectories",
+    "source": "503x503resource_withtrajectories.png",
+    "kind": "image",
+    "group": "wide",
+    "caption": "Resource landscapes and best evolved trajectories for the L = 503 torus. Top row: placement-step distributions used to generate the resource fields, shown for the uniform control and for Lévy-dust environments with μ ∈ {1.0, 1.5, 2.0, 2.5, 3.0}. Main panels: resource locations (gray points) overlaid with the trajectory of the best evolved agent in each environment (colored line).",
+    "default_source": "assets/figures/source/landscapes.png",
+    "preview": "assets/figures/preview/landscapes.webp"
+  },
+  {
+    "slug": "fitness",
+    "order": "02a",
+    "label": "Figure 2 · Fitness",
+    "name": "Evolution of fitness",
+    "source": "503x503fitness_comparison.pdf",
+    "kind": "pdf",
+    "group": "half",
+    "caption": "Mean fitness over 1500 generations for each resource environment, with shaded standard errors across agents within a single evolutionary run at each generation.",
+    "default_source": "assets/figures/source/fitness.pdf",
+    "preview": "assets/figures/preview/fitness.webp"
+  },
+  {
+    "slug": "step-lengths",
+    "order": "02b",
+    "label": "Figure 2 · Step lengths",
+    "name": "Step-length genome distributions",
+    "source": "503x503move_length_distributions.pdf",
+    "kind": "pdf",
+    "group": "half",
+    "caption": "Distributions of step-length genome entries at generations 0, 200, and 1500.",
+    "default_source": "assets/figures/source/step-lengths.pdf",
+    "preview": "assets/figures/preview/step-lengths.webp"
+  },
+  {
+    "slug": "moments",
+    "order": "03",
+    "label": "Moment fits · Seed 1",
+    "name": "Moment-based trajectory comparison",
+    "source": "moment_fits_seed1_large.pdf",
+    "kind": "pdf",
+    "group": "wide",
+    "caption": "Empirical second moments m₂ and fourth moments m₄ are compared with best-fit IS and LW models. Columns correspond to the six resource environments.",
+    "default_source": "assets/figures/source/moments.pdf",
+    "preview": "assets/figures/preview/moments.webp"
+  },
+  {
+    "slug": "movement",
+    "order": "04",
+    "label": "Figure 4 · Movement traits",
+    "name": "Movement traits and return intervals",
+    "source": "turnangle.pdf",
+    "kind": "pdf",
+    "group": "wide",
+    "caption": "Movement traits and return-interval statistics of the best evolved agents across grid sizes after 1500 generations. Columns correspond to resource environments.",
+    "default_source": "assets/figures/source/movement.pdf",
+    "preview": "assets/figures/preview/movement.webp"
+  },
+  {
+    "slug": "density",
+    "order": "08",
+    "label": "Figure 8 · Density",
+    "name": "Resource maps and trajectories at high density",
+    "source": "504D045agentpathover_resources.png",
+    "kind": "image",
+    "group": "wide",
+    "caption": "Best evolved trajectories overlaid on the corresponding resource maps for the highest tested density, ρ = 0.45.",
+    "default_source": "assets/figures/source/density.png",
+    "preview": "assets/figures/preview/density.webp"
+  }
+]
