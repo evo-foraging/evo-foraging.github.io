@@ -2,7 +2,7 @@
   {
     "slug": "landscapes",
     "order": "01",
-    "label": "Figure 1 · Resource landscapes",
+    "label": "Figure · Resource landscapes",
     "name": "Resource landscapes and best evolved trajectories",
     "source": "503x503resource_withtrajectories.png",
     "kind": "image",
@@ -14,7 +14,7 @@
   {
     "slug": "fitness",
     "order": "02a",
-    "label": "Figure 2 · Fitness",
+    "label": "Figure · Fitness",
     "name": "Evolution of fitness",
     "source": "503x503fitness_comparison.pdf",
     "kind": "pdf",
@@ -26,7 +26,7 @@
   {
     "slug": "step-lengths",
     "order": "02b",
-    "label": "Figure 2 · Step lengths",
+    "label": "Figure · Step lengths",
     "name": "Step-length genome distributions",
     "source": "503x503move_length_distributions.pdf",
     "kind": "pdf",
@@ -50,7 +50,7 @@
   {
     "slug": "movement",
     "order": "04",
-    "label": "Figure 4 · Movement traits",
+    "label": "Figure · Movement traits",
     "name": "Movement traits and return intervals",
     "source": "turnangle.pdf",
     "kind": "pdf",
@@ -62,7 +62,7 @@
   {
     "slug": "density",
     "order": "08",
-    "label": "Figure 8 · Density",
+    "label": "Figure · Density",
     "name": "Resource maps and trajectories at high density",
     "source": "504D045agentpathover_resources.png",
     "kind": "image",
