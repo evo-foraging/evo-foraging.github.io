@@ -39,3 +39,194 @@ a{color:inherit}a:focus-visible{outline:2px solid #285a76;outline-offset:4px}
     text-align: justify;
     text-align-last: left;
 }
+
+
+/* ============================================================
+   Publication metadata
+   ============================================================ */
+
+.publication-meta {
+  margin: 0.65rem 0 1.45rem;
+  text-align: center;
+  color: #687078;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.publication-meta .meta-sep {
+  margin: 0 0.55rem;
+  color: #a4a9ad;
+}
+
+.publication-meta a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #c9cccf;
+  transition: color 120ms ease, border-color 120ms ease;
+}
+
+.publication-meta a:hover,
+.publication-meta a:focus-visible {
+  color: #111;
+  border-bottom-color: #111;
+}
+
+
+/* ============================================================
+   Research-summary strip
+   ============================================================ */
+
+.result-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin: 0 auto 3rem;
+  padding: 1.35rem 0;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+.result-strip-item {
+  text-align: center;
+  padding: 0.2rem 1rem;
+}
+
+.result-strip-item + .result-strip-item {
+  border-left: 1px solid #dedede;
+}
+
+.result-strip strong {
+  display: block;
+  margin-bottom: 0.18rem;
+  color: #171717;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.result-strip span {
+  display: block;
+  color: #70777c;
+  font-size: 0.84rem;
+  line-height: 1.4;
+}
+
+
+/* ============================================================
+   Copy-citation button
+   ============================================================ */
+
+button.button {
+  font: inherit;
+}
+
+.citation-copy {
+  cursor: pointer;
+}
+
+
+/* ============================================================
+   Scientific figure lightbox
+   ============================================================ */
+
+.figure-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+  background: rgba(12, 14, 16, 0.94);
+}
+
+.figure-lightbox.open {
+  display: flex;
+}
+
+.figure-lightbox-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  max-height: 95vh;
+}
+
+.figure-lightbox img {
+  display: block;
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.figure-lightbox-close {
+  position: absolute;
+  top: -2.1rem;
+  right: 0;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-family: inherit;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.figure-lightbox-caption {
+  margin-top: 0.9rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+
+/* ============================================================
+   Mobile
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+  .publication-meta .meta-sep {
+    margin: 0 0.3rem;
+  }
+
+  .result-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .result-strip-item {
+    padding: 0.85rem 0.5rem;
+  }
+
+  .result-strip-item + .result-strip-item {
+    border-left: 0;
+    border-top: 1px solid #ececec;
+  }
+
+  .figure-lightbox {
+    padding: 1rem;
+  }
+
+  .figure-lightbox-close {
+    top: -2.2rem;
+  }
+}
+
+
+/* ============================================================
+   Accessibility
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
