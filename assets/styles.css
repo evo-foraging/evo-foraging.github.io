@@ -230,3 +230,111 @@ button.button {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ============================================================
+   Professional refinements (v2)
+   ============================================================ */
+
+/* Sticky, translucent top bar with section navigation */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+}
+.topbar-inner { min-height: 64px; }
+.nav a { position: relative; padding: 4px 0; transition: color 120ms ease; }
+.nav a:hover { text-decoration: none; color: var(--ink); }
+.nav a.nav-cta {
+  padding: 6px 13px;
+  border: 1px solid #2d373d;
+  border-radius: 5px;
+  color: var(--ink);
+  font-weight: 600;
+}
+.nav a.nav-cta:hover { background: var(--ink); color: #fff; }
+html { scroll-padding-top: 80px; }
+
+/* Buttons: consistent motion */
+.button { transition: background 140ms ease, color 140ms ease, box-shadow 140ms ease, transform 140ms ease; }
+.button:not(.disabled):hover { transform: translateY(-1px); }
+.button.dark:hover { background: #111a1f; }
+.button.ghost:hover { background: var(--soft); }
+.small-button { font-size: .84rem; padding: 8px 15px; }
+
+/* Key-findings strip sits under hero buttons */
+.hero .result-strip { max-width: 900px; margin: 2.6rem auto 0; }
+.hero .result-strip strong { font-family: Georgia, "Times New Roman", serif; font-weight: 500; }
+
+/* Poster section */
+#poster { padding-top: 48px; }
+#poster .section-label, #poster h2 { text-align: center; }
+.poster-figure { margin: 8px 0 0; }
+.poster-shell {
+  padding: 12px;
+  box-shadow: 0 1px 2px rgba(16, 24, 28, .04), 0 12px 32px rgba(16, 24, 28, .08);
+  transition: box-shadow 160ms ease, border-color 160ms ease;
+  cursor: zoom-in;
+}
+.poster-shell:hover { box-shadow: 0 2px 4px rgba(16, 24, 28, .06), 0 18px 44px rgba(16, 24, 28, .12); }
+.poster-actions {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 14px; flex-wrap: wrap; margin-top: 16px;
+}
+.poster-hint { font-size: .85rem; color: var(--muted); }
+.poster-links { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* Zoom cursor on all figures */
+.figure-shell { cursor: zoom-in; transition: border-color 140ms ease; }
+
+/* Citation / BibTeX */
+.bibtex-box {
+  position: relative;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.bibtex-box pre {
+  margin: 0;
+  padding: 22px 24px;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .84rem;
+  line-height: 1.65;
+  color: #2a3439;
+}
+.bibtex-copy {
+  position: absolute; top: 12px; right: 12px;
+  font: inherit; font-size: .78rem; font-weight: 600;
+  padding: 5px 12px;
+  background: #fff; color: var(--ink);
+  border: 1px solid #c9cfd2; border-radius: 4px;
+  cursor: pointer;
+}
+.bibtex-copy:hover { border-color: var(--ink); }
+
+/* Footer */
+.footer { border-top: 1px solid var(--line); }
+.footer-links a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+
+@media (max-width: 760px) {
+  .topbar-inner { padding: 10px 0; }
+  .nav { gap: 6px 16px; }
+  .nav a.nav-cta { padding: 3px 10px; }
+  .poster-actions { justify-content: center; }
+  .poster-hint { width: 100%; text-align: center; }
+  .bibtex-box pre { font-size: .76rem; padding: 18px 16px; }
+}
+
+/* Affiliations + fixes */
+.hero .author { margin-bottom: 8px; }
+.author sup, .affiliations sup { font-size: .68em; color: var(--muted); margin-left: 1px; }
+.affiliations {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 18px;
+  margin: 0 auto 4px; max-width: 860px;
+  font-size: .84rem; color: var(--muted); line-height: 1.5;
+}
+button.button.citation-copy { font-size: .9rem; font-weight: 600; }
+@media (max-width: 480px) { .nav a.nav-cta { display: none; } }

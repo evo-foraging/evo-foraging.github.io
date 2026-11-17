@@ -113,6 +113,9 @@
   }
   </script>
 
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23182125'/%3E%3Cpath d='M7 23l5-7 4 3 3-9 6 13' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#182125">
+
   <link rel="stylesheet" href="assets/styles.css">
 
 </head>
@@ -129,6 +132,19 @@
         <small>NeurIPS 2026</small>
       </a>
 
+      <nav class="nav" aria-label="Sections">
+        <a href="#poster">Poster</a>
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#figures">Figures</a>
+        <a href="#citation">Citation</a>
+        <a
+          class="nav-cta"
+          href="https://github.com/shailendrabhandari/intermittent-vs-levy-foraging"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Code ↗</a>
+      </nav>
 
     </div>
 
@@ -152,20 +168,27 @@
 
         <p class="author">
 
-          Shailendra Bhandari
+          Shailendra Bhandari<sup>1</sup>
 
           <span class="sep">·</span>
 
-          Alex Szorkovszky
+          Alex Szorkovszky<sup>2</sup>
 
           <span class="sep">·</span>
 
-          Anis Yazidi
+          Anis Yazidi<sup>1,3</sup>
 
           <span class="sep">·</span>
 
-          Pedro G. Lind
+          Pedro G. Lind<sup>1,4</sup>
 
+        </p>
+
+        <p class="affiliations">
+          <span><sup>1</sup>OsloMet – Oslo Metropolitan University</span>
+          <span><sup>2</sup>Simula Research Laboratory</span>
+          <span><sup>3</sup>University of Oslo</span>
+          <span><sup>4</sup>Kristiania University of Applied Sciences</span>
         </p>
 
 
@@ -222,18 +245,14 @@
           </span>
 
 
-          <span
-            class="button disabled"
-            role="link"
-            aria-disabled="true"
-            title="Poster available after publication"
+          <a
+            class="button ghost"
+            href="assets/poster/poster.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Poster
-
-            <span class="soon">
-              Coming soon
-            </span>
-          </span>
+            Poster (PDF) ↗
+          </a>
 
 
           <a
@@ -246,6 +265,70 @@
           </a>
 
         </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="section" id="poster">
+
+      <div class="wrap">
+
+        <p class="section-label">
+          NeurIPS 2026 poster
+        </p>
+
+        <h2>
+          Poster
+        </h2>
+
+        <figure class="poster-figure">
+
+          <a
+            class="figure-shell poster-shell"
+            href="assets/poster/poster.png"
+            aria-label="Open large poster"
+          >
+
+            <img
+              src="assets/poster/poster-preview.webp"
+              alt="NeurIPS 2026 poster: Evolutionary foraging in grids"
+              loading="eager"
+              width="2400"
+              height="1543"
+            >
+
+          </a>
+
+          <figcaption class="poster-actions">
+
+            <span class="poster-hint">Click the poster to enlarge.</span>
+
+            <span class="poster-links">
+              <a
+                class="button dark small-button"
+                href="assets/poster/poster.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download PDF
+              </a>
+
+              <a
+                class="button ghost small-button"
+                href="assets/poster/poster.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Full-resolution PNG
+              </a>
+            </span>
+
+          </figcaption>
+
+        </figure>
 
       </div>
 
@@ -285,8 +368,6 @@
           Evolution rapidly reshapes the movement genome toward short displacements while retaining a sparse tail of longer relocations, consistent with local exploitation punctuated by occasional transfer.
 
           The framework provides a controlled setting for studying how search rules emerge under resource limitation and may inform resource-constrained exploration in autonomous systems.
-
-          Project webpage: https://evo-foraging.github.io/
 
         </p>
 
@@ -822,9 +903,9 @@
             href="assets/poster/poster.pdf"
             target="_blank"
             rel="noopener noreferrer"
->
-  Poster (PDF) ↗
-</a>
+          >
+            Poster (PDF) ↗
+          </a>
 
 
           <a
@@ -853,6 +934,48 @@
     </section>
 
 
+
+    <section class="section" id="citation">
+
+      <div class="wrap">
+
+        <p class="section-label">
+          Cite this work
+        </p>
+
+        <h2>
+          BibTeX
+        </h2>
+
+        <div class="bibtex-box">
+
+          <button
+            class="bibtex-copy"
+            id="copy-bibtex"
+            type="button"
+          >
+            Copy
+          </button>
+
+<pre id="bibtex"><code>@inproceedings{bhandari2026evolutionary,
+  title     = {Evolutionary foraging in grids: Intermittent search
+               dynamics emerge in finite, depletable landscapes},
+  author    = {Bhandari, Shailendra and Szorkovszky, Alex and
+               Yazidi, Anis and Lind, Pedro G.},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026},
+  eprint    = {2609.39239},
+  archivePrefix = {arXiv},
+  doi       = {10.48550/arXiv.2609.39239}
+}</code></pre>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
   </main>
 
 
@@ -867,6 +990,16 @@
 
       <span>
         Evolutionary foraging in grids · NeurIPS 2026
+      </span>
+
+      <span class="footer-links">
+        <a href="https://arxiv.org/abs/2609.39239" target="_blank" rel="noopener noreferrer">arXiv</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/shailendrabhandari/intermittent-vs-levy-foraging" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span class="sep">·</span>
+        <a href="assets/poster/poster.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+        <span class="sep">·</span>
+        <a href="#top">Back to top ↑</a>
       </span>
 
     </div>
@@ -971,6 +1104,37 @@
               "Could not copy citation:",
               error
             );
+
+          }
+
+        });
+
+      }
+
+
+
+      const bibButton =
+        document.getElementById("copy-bibtex");
+
+      if (bibButton) {
+
+        bibButton.addEventListener("click", async () => {
+
+          try {
+
+            await navigator.clipboard.writeText(
+              document.getElementById("bibtex").textContent
+            );
+
+            bibButton.textContent = "Copied ✓";
+
+            window.setTimeout(() => {
+              bibButton.textContent = "Copy";
+            }, 1600);
+
+          } catch (error) {
+
+            console.error("Could not copy BibTeX:", error);
 
           }
 
